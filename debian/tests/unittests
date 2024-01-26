@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -e
+
+pkgos-dh_auto_test --no-py2 'hacking\.tests\.(?!.*test_doctest\.HackingTestCase\.test_flake8.*)'
